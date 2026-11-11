@@ -1,0 +1,45 @@
+{
+  "source_repo": "expressjs/express",
+  "source_url": "https://github.com/expressjs/express",
+  "audit_date": "2026-11-11T10:27:43.163872",
+  "scanner_version": "1.3.0",
+  "findings_count": 4,
+  "severity_breakdown": {
+    "HIGH": 2,
+    "CRITICAL": 2
+  },
+  "findings": [
+    {
+      "id": "JS-XSS-001",
+      "name": "DOM XSS via innerHTML",
+      "severity": "HIGH",
+      "cwe": "CWE-79",
+      "file": "test/res.redirect.js",
+      "line": 115
+    },
+    {
+      "id": "JS-XSS-001",
+      "name": "DOM XSS via innerHTML",
+      "severity": "HIGH",
+      "cwe": "CWE-79",
+      "file": "test/res.redirect.js",
+      "line": 116
+    },
+    {
+      "id": "JS-EVAL-001",
+      "name": "Code injection via eval()",
+      "severity": "CRITICAL",
+      "cwe": "CWE-95",
+      "file": "test/res.redirect.js",
+      "line": 115
+    },
+    {
+      "id": "JS-EVAL-001",
+      "name": "Code injection via eval()",
+      "severity": "CRITICAL",
+      "cwe": "CWE-95",
+      "file": "test/res.redirect.js",
+      "line": 116
+    }
+  ]
+}
